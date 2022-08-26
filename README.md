@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Nico-2b/CalculatorApp.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [The Entire Code](https://github.com/Nico-2b/CalculatorApp.git)
+- Live Site URL: [The WebSite](calculatorbynicolasfanti.netlify.app)
 
 ## My process
 
