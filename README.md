@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-(./screen.jpg)
+![Design preview for the Calculator app coding challenge](./screen.jpg)
 
 
 ### Links
