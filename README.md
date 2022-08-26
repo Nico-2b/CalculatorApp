@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-(./ScreenShot.png)
+(./screen.jpg)
 
 
 ### Links
