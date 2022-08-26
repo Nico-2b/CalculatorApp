@@ -1,0 +1,352 @@
+
+/* Background général */
+
+.appContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font);
+}
+/* selecteur de thème bg */
+.appContent.th1 {
+    background-color: var(--mainBackground1);
+}
+.appContent.th2 {
+    background-color: var(--mainBackground2);
+}
+.appContent.th3 {
+    background-color: var(--mainBackground3);
+}
+
+.appContent__calcContainer {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.appContent__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+/* selecteur de thème titres & HEADER */
+.appContent__title.th1, .themeSelector__title.th1,
+.sliderContainer__indicatorContainer.th1 span, 
+.screen__arguments.th1 {
+    color: white;
+}
+.appContent__title.th2, .themeSelector__title.th2,
+.sliderContainer__indicatorContainer.th2 span, .screen__arguments.th2 {
+    color: var(--textVeryDarkGrayishYellow2);
+}
+.appContent__title.th3, .themeSelector__title.th3,
+.sliderContainer__indicatorContainer.th3 span, .screen__arguments.th3 {
+    color: var(--textLightYellow3);
+
+}
+.themeSelector__title {
+    margin-right: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.35;
+}
+.appContent__themeSelector {
+    display: flex;
+    align-items: flex-end;
+    
+}
+.themeSelector__sliderContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.sliderContainer__indicatorContainer {
+    display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    
+}
+
+.sliderContainer__indicatorContainer span {
+    width: 1.5rem;
+    text-align: center;
+}
+
+.sliderContainer__slide {
+    width: 7rem;
+    height: 2.2rem;
+    border-radius :15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sliderContainer__slide.th1 {
+    background-color: var(--toggleBackground1);
+}
+.sliderContainer__slide.th2 {
+    background-color: var(--toggleBackground2);
+}
+.sliderContainer__slide.th3 {
+    background-color: var(--toggleKeyScreenBackground3);
+}
+
+.slide__selector {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: filter 0.3s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slide__selector:hover {
+    filter: brightness(1.5);
+}
+.slide__selector--active.th1 {
+    background-color: var(--keyBackgroundToggleRed1);
+}
+.slide__selector--active.th2 {
+    background-color: var(--keyBackgroundToggleOrange2);
+}
+.slide__selector--active.th3 {
+    background-color: var(--keyBackgroundTogglePureCyan3);
+}
+
+
+/* screen */
+
+.appContent__screen {
+    width: 100%;
+    padding: 3rem;
+    height: 11rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+}
+
+.screen__calcul {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin-bottom: 1rem;
+    color: red;
+    font-size: 1.7rem;
+    opacity: 0.8;
+   overflow-y: auto;
+
+
+}
+.appContent__screen.th1 {
+    background-color: var(--screenBackground1);
+}
+.appContent__screen.th2 {
+    background-color: var(--screenBackground2);
+}
+.appContent__screen.th3 {
+    background-color: var(--toggleKeyScreenBackground3);
+}
+
+.screen__arguments {
+    font-size: 3.2rem;
+    overflow-x: auto;
+}
+
+/* numpad */
+
+.appContent__numpad {
+    width: 100%;
+    padding: 2rem;
+    height: 39rem;
+    border-radius: 1.5rem;
+    display: grid;
+    gap: 1.9rem;
+    grid: 
+    "h i j DEL"1fr
+    "e f g plus"1fr
+    "b c d minus"1fr
+    "dec a factor multiplier" 1fr
+    "RESET RESET equal equal" 1.1fr/ 1fr 1fr 1fr 1fr
+    ;
+    
+
+}
+
+.numpad__button:nth-child(1) {
+grid-area: a;
+}
+.numpad__button:nth-child(2) {
+grid-area: b;
+}
+.numpad__button:nth-child(3) {
+grid-area: c;
+}
+.numpad__button:nth-child(4) {
+grid-area: d;
+}
+.numpad__button:nth-child(5) {
+grid-area: e;
+}
+.numpad__button:nth-child(6) {
+grid-area: f;
+}
+.numpad__button:nth-child(7) {
+grid-area: g;
+}
+.numpad__button:nth-child(8) {
+grid-area: h;
+}
+.numpad__button:nth-child(9) {
+grid-area: i;
+}
+.numpad__button:nth-child(10) {
+grid-area: j;
+}
+.numpad__button:nth-child(11) {
+grid-area: plus;
+}
+.numpad__button:nth-child(12) {
+grid-area: minus;
+}
+.numpad__button:nth-child(13) {
+grid-area: factor;
+}
+.numpad__button:nth-child(14) {
+grid-area: multiplier;
+}
+.numpad__button:nth-child(15) {
+grid-area: dec;
+}
+
+
+.appContent__numpad.th1 {
+    background-color: var(--toggleBackground1);
+}
+.appContent__numpad.th2 {
+    background-color: var(--toggleBackground2);
+}
+.appContent__numpad.th3 {
+    background-color: var(--toggleKeyScreenBackground3);
+}
+
+.numpad__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 3.2rem;
+    justify-self: center;
+    align-self: center;
+    transition: filter 0.2s ease-in-out;
+    
+}
+.numpad__button:hover {
+    filter: brightness(1.2);
+
+}
+
+.numpad__button.th1 {
+    background-color: var(--keyBackgroundLightGrayishOrange1);
+    box-shadow: 0 3px 1px var(--keyShadowGrayishOrange1);
+    color: var(--textVeryDarkGrayishBlue1);
+}
+.numpad__button.th2 {
+    background-color: var(--keyBackgroundLightGrayishYellow2);
+    box-shadow: 0 3px 1px var(--keyShadowGrayishYellow2);
+    color: var(--textVeryDarkGrayishYellow2);
+}
+.numpad__button.th3 {
+    background-color: var(--keyBackgroundVeryDarkViolet3);
+    box-shadow: 0 3px 1px var(--keyShadowDarkMagenta3);
+    color: var(--textLightYellow3);
+}
+
+
+.appContent__numpad .numpad__button--delete {
+    color: white;
+    grid-area: DEL;
+    font-size:2.5rem;
+    
+}
+.appContent__numpad .numpad__button--reset {
+    color: white;
+    grid-area: RESET;
+    width: 100%;
+    font-size:2.5rem;
+
+}
+
+.appContent__numpad .numpad__button--equal {
+    grid-area: equal;
+    width: 100%;
+    color: white;
+
+}
+
+
+.numpad__button--delete.th1, .numpad__button--reset.th1 {
+    background-color: var(--keyBackgroundDarkBlue1);
+    box-shadow: 0 3px 1px var(--keyShadowDarkBlue1);
+}
+.numpad__button--delete.th2, .numpad__button--reset.th2 {
+    background-color: var(--keyBackgroundModerateCyan2);
+    box-shadow: 0 3px 1px var(--keyShadowDarkCyan2);
+}
+.numpad__button--delete.th3, .numpad__button--reset.th3 {
+    background-color: var(--keyBackgroundDarkViolet3);
+    box-shadow: 0 3px 1px var(--keyShadowVividMagenta3);
+}
+
+.numpad__button--equal.th1 {
+    background-color: var(--keyBackgroundToggleRed1);
+    box-shadow: 0 3px 1px var(--keyShadowDarkRed1);
+}
+.numpad__button--equal.th2 {
+    background-color: var(--keyBackgroundToggleOrange2);
+    box-shadow: 0 3px 1px var(--keyShadowDarkOrange2);
+
+}
+.numpad__button--equal.th3 {
+    background-color: var(--keyBackgroundTogglePureCyan3);
+    box-shadow: 0 3px 1px var(--keyShadowSoftCyan3);
+
+}
+
+@media (max-width: 1320px) {
+    .appContent__calcContainer {
+        width: 35%;
+    }
+}
+@media (max-width: 1000px) {
+    .appContent__calcContainer {
+        width: 45%;
+    }
+}
+@media (max-width: 650px) {
+    .appContent__calcContainer {
+        width: 55%;
+    }
+}
+@media (max-width: 500px) {
+    .appContent__calcContainer {
+        width: 75%;
+    }
+}
+@media (max-width: 400px) {
+    .appContent__calcContainer {
+        width: 90%;
+    }
+}

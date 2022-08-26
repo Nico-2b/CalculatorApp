@@ -1,0 +1,65 @@
+:root {
+                                                            /* Thème 1 */
+       
+/* Backgrounds */
+--mainBackground1: hsl(222, 26%, 31%);
+--toggleBackground1 : hsl(223, 31%, 20%);
+--screenBackground1 : hsl(224, 36%, 15%);
+
+
+/* Keys */
+--keyBackgroundDarkBlue1: hsl(225, 21%, 49%);
+--keyShadowDarkBlue1: hsl(224, 28%, 35%);
+--keyBackgroundToggleRed1 : hsl(6, 63%, 50%);
+--keyShadowDarkRed1 : hsl(6, 70%, 34%);
+--keyBackgroundLightGrayishOrange1 : hsl(30, 25%, 89%);
+--keyShadowGrayishOrange1 : hsl(28, 16%, 65%);
+
+/* Texts */
+--textVeryDarkGrayishBlue1 : hsl(221, 14%, 31%);
+--white1 : hsl(0, 0, 100%);
+                                                            /* Thème 2 */
+
+/* Backgrounds */
+--mainBackground2: hsl(0, 0%, 90%);
+--toggleBackground2 : hsl(0, 5%, 81%);
+--screenBackground2 : hsl(0, 0%, 93%);
+
+
+/* Keys */
+--keyBackgroundModerateCyan2: hsl(185, 42%, 37%);
+--keyShadowDarkCyan2: hsl(185, 58%, 25%);
+--keyBackgroundToggleOrange2 : hsl(25, 98%, 40%);
+--keyShadowDarkOrange2 : hsl(25, 99%, 27%);
+--keyBackgroundLightGrayishYellow2 : hsl(45, 7%, 89%);
+--keyShadowGrayishYellow2 : hsl(35, 11%, 61%);
+
+/* Texts */
+--textVeryDarkGrayishYellow2 : hsl(60, 10%, 19%);
+--white2 : hsl(0, 0, 100%);
+                                                            /* Thème 3 */
+
+/* Backgrounds */
+--mainBackground3: hsl(268, 75%, 9%);
+--toggleKeyScreenBackground3 : hsl(268, 71%, 12%);
+
+
+
+/* Keys */
+--keyBackgroundDarkViolet3: hsl(281, 89%, 26%);
+--keyShadowVividMagenta3: hsl(285, 91%, 52%);
+--keyBackgroundTogglePureCyan3 : hsl(176, 100%, 44%);
+--keyShadowSoftCyan3 : hsl(177, 92%, 70%);
+--keyBackgroundVeryDarkViolet3 : hsl(268, 47%, 21%);
+--keyShadowDarkMagenta3 : hsl(290, 70%, 36%);
+
+/* Texts */
+--textLightYellow3 : hsl(52, 100%, 62%);
+--textVeryDarkBlue3 : hsl(198, 20%, 13%);
+--white3 : hsl(0, 0, 100%);                                                            
+
+
+/* ------------------------------------------------ */
+
+--font: 'League Spartan', sans-serif;
+}
